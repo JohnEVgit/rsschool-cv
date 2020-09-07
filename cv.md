@@ -20,10 +20,10 @@ I’m not afraid and interested in learning new methods and work with new progra
 
 ## Code examples
 
-https://boro.fi/  
+[https://boro.fi/](https://boro.fi/)  
 FrontEnd development: HTML, CSS, jQuery  
 
-http://eucsale.com/  
+[http://eucsale.com/](http://eucsale.com/)  
 FrontEnd development: HTML, CSS, jQuery, integration into CMS ModX Revolution.
 
 ## Experience
@@ -33,3 +33,7 @@ HTML Developer for 4+ years
 ## Education
 
 htmlacademy.ru courses  
+
+## English
+
+Pre-intermediate (А2)
