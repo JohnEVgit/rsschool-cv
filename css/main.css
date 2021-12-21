@@ -87,19 +87,19 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-a {
-  color: #1b762a;
-  transition: text-decoration-color 0.2s;
-}
-a:hover {
-  text-decoration-color: transparent;
+:root {
+  --main-color: #1b762a;
+  --text-color: #464445;
+  --bg-color: #d0d0d0;
+  --white-color: #fff;
+  --code-color: #f0f0f0;
 }
 
 .cv {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 18px;
-  background-color: #d0d0d0;
-  color: #464445;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 .cv__main {
@@ -110,7 +110,7 @@ a:hover {
 
 .cv-main {
   box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
-  background-color: #464445;
+  background-color: var(--text-color);
 }
 
 
@@ -127,19 +127,19 @@ a:hover {
 
 
 .cv-main-ava {
-  background-color: #fff;
+  background-color: var(--white-color);
 }
 
 .cv-main-ava__wrapper {
   border-bottom-right-radius: 50%;
-  background-color: #464445;
+  background-color: var(--text-color);
   padding-right: 20px;
   padding-bottom: 20px;
 }
 
 .cv-main-ava__inner {
   border-radius: 50%;
-  border: 20px solid #1b762a;
+  border: 20px solid var(--main-color);
   box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
 }
 
@@ -152,7 +152,7 @@ a:hover {
 
 
 .cv-main__title {
-  background-color: #fff;
+  background-color: var(--white-color);
   padding: 40px 80px;
   flex: 1 1 auto;
   text-align: center;
@@ -169,7 +169,7 @@ a:hover {
   font-weight: bold;
   font-size: 58px;
   letter-spacing: 0.05em;
-  border-bottom: 3px solid #464445;
+  border-bottom: 3px solid var(--text-color);
   width: 100%;
   position: relative;
 }
@@ -182,7 +182,7 @@ a:hover {
   position: absolute;
   bottom: -7px;
   border-radius: 50%;
-  background-color: #464445;
+  background-color: var(--text-color);
 }
 
 .cv-main__name::before {
@@ -194,7 +194,7 @@ a:hover {
 }
 
 .cv-main__label {
-  color: #1b762a;
+  color: var(--main-color);
 }
 
 .cv-main__position {
@@ -215,7 +215,7 @@ a:hover {
 }
 
 .cv-main__content {
-  background-color: #fff;
+  background-color: var(--white-color);
   padding: 0 80px 20px;
   flex: 1 1 auto;
   margin-top: -40px;
@@ -231,7 +231,7 @@ a:hover {
 
 .cv-main-section__top {
   display: flex;
-  border-bottom: 2px solid #464445;
+  border-bottom: 2px solid var(--text-color);
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -258,14 +258,19 @@ a:hover {
   font-size: 14px;
   line-height: 1.3;
   padding: 20px;
-  background-color: #f0f0f0;
+  background-color: var(--code-color);
   white-space: pre-wrap;
 }
 
 .cv-main-section__link {
   word-break: break-word;
+  color: var(--main-color);
+  transition: text-decoration-color 0.2s;
 }
 
+.cv-main-section__link:hover {
+  text-decoration-color: transparent;
+}
 
 
 .cv-main__aside {
@@ -274,14 +279,14 @@ a:hover {
 
 
 .cv-aside {
-  background-color: #fff;
+  background-color: var(--white-color);
   padding-top: 120px;
   border-radius: 130px 0 0 0;
   position: relative;
 }
 
 .cv-aside__section {
-  background-color: #464445;
+  background-color: var(--text-color);
   position: relative;
 }
 
@@ -308,23 +313,23 @@ a:hover {
 }
 
 .cv-aside__triangle::before {
-  background-color: #464445;
+  background-color: var(--text-color);
 }
 
 .cv-aside__triangle::after {
-  background-color: #fff;
+  background-color: var(--white-color);
   border-bottom-left-radius: 50%;
   left: 5px;
 }
 
 
 .cv-aside__top {
-  background-color: #fff;
+  background-color: var(--white-color);
 }
 
 .cv-aside__header {
-  color: #fff;
-  background-color: #464445;
+  color: var(--white-color);
+  background-color: var(--text-color);
   border-radius: 0 50px 50px 0;
   display: flex;
   justify-content: space-between;
@@ -342,8 +347,8 @@ a:hover {
 .cv-aside__icon {
   flex: 0 1 32px;
   height: 32px;
-  background-color: #fff;
-  color: #464445;
+  background-color: var(--white-color);
+  color: var(--text-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -352,7 +357,7 @@ a:hover {
 
 .cv-aside__bottom {
   padding: 20px 0 40px 30px;
-  background: #fff;
+  background: var(--white-color);
   border-radius: 25px 0 0 25px;
   margin: 0;
 }
@@ -370,18 +375,30 @@ a:hover {
   margin-bottom: 8px;
 }
 
+.cv-aside-contacts__text,
 .cv-aside-contacts__link {
   display: flex;
   align-items: center;
 }
 
+.cv-aside-contacts__link {
+  color: var(--main-color);
+  transition: text-decoration-color 0.2s;
+}
+
+.cv-aside-contacts__link:hover {
+  text-decoration-color: transparent;
+}
+
+
+
 .cv-aside-contacts__icon {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: #464445;
+  background-color: var(--text-color);
   margin-right: 12px;
-  color: #fff;
+  color: var(--white-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -416,7 +433,7 @@ a:hover {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border: 3px solid #464445;
+  border: 3px solid var(--text-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -433,7 +450,7 @@ a:hover {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: 5px solid #464445;
+  border: 5px solid var(--text-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -457,9 +474,9 @@ a:hover {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #464445;
+  background-color: var(--text-color);
   margin-right: 10px;
-  color: #fff;
+  color: var(--white-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -503,7 +520,7 @@ a:hover {
     padding-bottom: 15px;
   }
   .cv-main-ava__inner {
-    border: 15px solid #1b762a;
+    border: 15px solid var(--main-color);
   }
   .cv-main-ava__img {
     width: 190px;
@@ -608,7 +625,7 @@ a:hover {
     padding-bottom: 10px;
   }
   .cv-main-ava__inner {
-    border: 10px solid #1b762a;
+    border: 10px solid var(--main-color);
     box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
   }
   .cv-main-ava__img {
@@ -662,7 +679,7 @@ a:hover {
     padding-bottom: 6px;
   }
   .cv-main-ava__inner {
-    border: 6px solid #1b762a;
+    border: 6px solid var(--main-color);
   }
   .cv-main-ava__img {
     width: 100px;
@@ -702,7 +719,7 @@ a:hover {
     padding-bottom: 5px;
   }
   .cv-main-ava__inner {
-    border: 5px solid #1b762a;
+    border: 5px solid var(--main-color);
   }
   .cv-main-ava__img {
     width: 75px;
