@@ -13,8 +13,43 @@
 </head>
 
 <body class="cv">
-<header class="cv__header cv-header">
-
+<header class="cv__header cv-header js-cv-header">
+    <button class="cv-header__toggle cv-header-toggle js-cv-header-toggle" title="Toggle menu" aria-label="Toggle menu">
+        <svg class="cv-header-toggle__open" width="24" height="24" aria-hidden="true">
+            <use href="img/svg-sprite.svg#bars"/>
+        </svg>
+        <svg class="cv-header-toggle__close" width="24" height="24" aria-hidden="true">
+            <use href="img/svg-sprite.svg#close"/>
+        </svg>
+    </button>
+    <nav class="cv-header__nav js-cv-header__nav">
+        <ul class="cv-header__list">
+            <li class="cv-header__item">
+                <a class="cv-header__link js-cv-header__link" href="#summary">Summary</a>
+            </li>
+            <li class="cv-header__item">
+                <a class="cv-header__link js-cv-header__link" href="#codeExamples">Code examples</a>
+            </li>
+            <li class="cv-header__item">
+                <a class="cv-header__link js-cv-header__link" href="#experience">Experience</a>
+            </li>
+            <li class="cv-header__item">
+                <a class="cv-header__link js-cv-header__link" href="#education">Education</a>
+            </li>
+            <li class="cv-header__item">
+                <a class="cv-header__link js-cv-header__link" href="#contactInfo">Contact Info</a>
+            </li>
+            <li class="cv-header__item">
+                <a class="cv-header__link js-cv-header__link" href="#skills">Skills</a>
+            </li>
+            <li class="cv-header__item">
+                <a class="cv-header__link js-cv-header__link" href="#english">English</a>
+            </li>
+            <li class="cv-header__item">
+                <a class="cv-header__link js-cv-header__link" href="#passions">Passions</a>
+            </li>
+        </ul>
+    </nav>
 </header>
 
 <main class="cv__main cv-main">
@@ -37,7 +72,7 @@
     </div>
     <div class="cv-main__body">
         <div class="cv-main__content">
-            <section class="cv-main__section cv-main-section">
+            <section id="summary" class="cv-main__section cv-main-section">
                 <div class="cv-main-section__top">
                     <svg class="cv-main-section__svg" width="40" height="40" aria-hidden="true">
                         <use href="img/svg-sprite.svg#user"/>
@@ -54,7 +89,7 @@
                 </div>
             </section>
 
-            <section class="cv-main__section cv-main-section">
+            <section id="codeExamples" class="cv-main__section cv-main-section">
                 <div class="cv-main-section__top">
                     <svg class="cv-main-section__svg" width="40" height="40" aria-hidden="true">
                         <use href="img/svg-sprite.svg#code"/>
@@ -68,7 +103,7 @@
                 </div>
             </section>
 
-            <section class="cv-main__section cv-main-section">
+            <section id="experience" class="cv-main__section cv-main-section">
                 <div class="cv-main-section__top">
                     <svg class="cv-main-section__svg" width="40" height="40" aria-hidden="true">
                         <use href="img/svg-sprite.svg#experience"/>
@@ -115,7 +150,7 @@
                 </div>
             </section>
 
-            <section class="cv-main__section cv-main-section">
+            <section id="education" class="cv-main__section cv-main-section">
                 <div class="cv-main-section__top">
                     <svg class="cv-main-section__svg" width="40" height="40" aria-hidden="true">
                         <use href="img/svg-sprite.svg#education"/>
@@ -137,7 +172,7 @@
 
         <aside class="cv-main__aside cv-aside">
             <div class="cv-aside__triangle"></div>
-            <section class="cv-aside__section">
+            <section id="contactInfo" class="cv-aside__section">
                 <div class="cv-aside__top">
                     <div class="cv-aside__header">
                         <h2 class="cv-aside__title">Contact Info</h2>
@@ -189,7 +224,8 @@
                     </ul>
                 </div>
             </section>
-            <section class="cv-aside__section">
+
+            <section id="skills" class="cv-aside__section">
                 <div class="cv-aside__top">
                     <div class="cv-aside__header">
                         <h2 class="cv-aside__title">Skills</h2>
@@ -325,7 +361,7 @@
                 </div>
             </section>
 
-            <section class="cv-aside__section">
+            <section id="english" class="cv-aside__section">
                 <div class="cv-aside__top">
                     <div class="cv-aside__header">
                         <h2 class="cv-aside__title">English</h2>
@@ -344,8 +380,7 @@
                 </div>
             </section>
 
-
-            <section class="cv-aside__section">
+            <section id="passions" class="cv-aside__section">
                 <div class="cv-aside__top">
                     <div class="cv-aside__header">
                         <h2 class="cv-aside__title">Passions</h2>
@@ -398,6 +433,8 @@
         <img height="24" src="https://rs.school/images/rs_school_js.svg" alt="rs_school_js">
     </a>
 </footer>
+
+<script src="js/main.js"></script>
 
 </body>
 
