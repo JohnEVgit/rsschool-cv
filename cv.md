@@ -2,9 +2,9 @@
 
 ## Contact Info
 
-* Email: [mailto:john13ev@gmail.com](john13ev@gmail.com)
-* Skype: [skype:john_e.v.?chat](john_e.v.)
-* Github: [https://github.com/JohnEVgit](JohnEVgit)
+* Email: [john13ev@gmail.com](mailto:john13ev@gmail.com)
+* Skype: [john_e.v.](skype:john_e.v.?chat)
+* Github: [JohnEVgit](https://github.com/JohnEVgit)
 * Discord: JohnEV#9721
 
 ## Summary
@@ -67,7 +67,7 @@ BNTU, The Power Plant Construction and Engineering Services Faculty, 2005 - 2010
 
 The Rolling Scopes School JS/FE 2020 Q3 (Javascript)  
 Date: Feb 25 2021  
-[https://app.rs.school/certificate/al9ycojs](Certificate of completion)
+[Certificate of completion](https://app.rs.school/certificate/al9ycojs)
 
 ## English
 
