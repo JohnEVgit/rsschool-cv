@@ -92,6 +92,7 @@ textarea {
   --text-color: #464445;
   --bg-color: #d0d0d0;
   --white-color: #ffffff;
+  --black-color: #000000;
   --code-color: #f0f0f0;
 }
 
@@ -437,7 +438,6 @@ textarea {
   font-weight: bold;
 }
 
-
 .cv-aside__passions {
   margin: 0 -10px 0 0;
 }
@@ -463,6 +463,37 @@ textarea {
 
 .cv-aside-passions__elem:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.cv__footer {
+  min-width: 320px;
+  max-width: 1024px;
+  margin: 20px auto;
+  color: var(--black-color);
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.cv-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cv-footer__githab {
+  color: var(--black-color);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.cv-footer__githab:hover {
+  color: var(--main-color);
+}
+
+.cv-footer__date {
+  margin: 0;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -549,7 +580,6 @@ textarea {
   }
 }
 
-
 @media screen and (max-width: 768px) {
   .cv-main__body {
     display: block;
@@ -605,7 +635,6 @@ textarea {
   }
 }
 
-
 @media screen and (max-width: 650px) {
   .cv-main__head {
     padding: 30px 0 0 30px;
@@ -656,8 +685,7 @@ textarea {
   }
 }
 
-
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 550px) {
   .cv-main-ava__img {
     width: 100px;
     height: 100px;
@@ -668,7 +696,6 @@ textarea {
     height: 130px;
   }
 }
-
 
 @media screen and (max-width: 480px) {
   .cv-main__head {
@@ -717,7 +744,6 @@ textarea {
     padding-right: 20px;
   }
 }
-
 
 @media screen and (max-width: 400px) {
   .cv-main__head {
