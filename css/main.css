@@ -526,13 +526,13 @@ textarea {
   box-sizing: border-box;
 }
 
-.cv-footer__githab {
+.cv-footer__github {
   color: var(--black-color);
   text-decoration: none;
   transition: color 0.2s;
 }
 
-.cv-footer__githab:hover {
+.cv-footer__github:hover {
   color: var(--main-color);
 }
 
